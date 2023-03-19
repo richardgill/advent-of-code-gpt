@@ -1,0 +1,23 @@
+You must solve {{partDescription}} using Deno and Typescript.
+
+Please write the code to run the examples you listed and print the results.
+
+
+You can read files in Deno like this:
+
+```typescript
+import * as path from 'https://deno.land/std@0.101.0/path/mod.ts'
+
+const readRelativeInput = (importUrl, inputFile) => {
+  const dirname = path.dirname(path.fromFileUrl(importUrl))
+  const filePath = path.join(dirname, 'data', inputFile)
+  return Deno.readTextFileSync(filePath)
+}
+```
+
+The puzzle input is stored at `./data/puzzleInput.txt`
+
+
+Your solution should print console.log statements to help me understand what is happening as the code runs.
+
+The last thing your solution should do is print the answer to the puzzle on a new line like this: `console.log('\n', answer)`
