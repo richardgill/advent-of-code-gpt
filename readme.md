@@ -12,7 +12,7 @@ Install pnpm
 
 Install Deno
 
-Add a `.env` file with `OPENAI_API_KEY="sk-xyz" in it.
+Add a `.env` file with `OPENAI_API_KEY="sk-xyz"` in it.
 
 # Run
 
